@@ -6,7 +6,8 @@ public enum Constantbottles {
 	
 	URL("jdbc:mysql://localhost:3306/bottles"),
 	USERNAME("root"),
-	PASSWORD("xworkzodc@123");
+	PASSWORD("Xworkzodc@123");
+	
 	
 	
 	private String value;

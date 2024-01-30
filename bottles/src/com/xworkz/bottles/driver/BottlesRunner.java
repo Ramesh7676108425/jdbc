@@ -19,7 +19,8 @@ public class BottlesRunner {
 				  Statement statement=connection.createStatement()){
 			System.out.println("connected successfully");
 			
-			String query="INSERT INTO bottles_details values('qqqq','pppp')";
+			String query="INSERT INTO bottles_details values('LiquidLuxe','120')";
+			
 			statement.execute(query);
 			
 		}catch(Exception e) {

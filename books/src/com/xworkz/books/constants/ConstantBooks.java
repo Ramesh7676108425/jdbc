@@ -2,7 +2,7 @@ package com.xworkz.books.constants;
 
 public enum ConstantBooks {
 	
-	URL("jdbc:mysql://localhost:3306/Books"),
+	URL("jdbc:mysql://localhost:3306/books1"),
 	USERNAME("root"),
 	PASSWORD("Xworkzodc@123");
 	

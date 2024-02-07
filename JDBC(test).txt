@@ -1,0 +1,114 @@
+
+
+
+  1)jdbc is an application programming interface It will connect two application they are
+    java and mysql
+	
+	java-          -database     
+
+
+
+   2)load the jar-and get connected with the database--create a statement--execute the statement--getting result--close the exception
+
+
+3)statement:- in statement we should complile multiple times and excecute multiple times
+
+  syntax:-Statement  statement=drivermanager.getconnection(url,username,password){
+  
+  }   
+  
+  preparedStatement:- in prepared statement we should complile only once and executes multiple times
+  
+  syntax:--PreparedStatement preparedStatement=connection.getconnection(query){
+  }
+  
+  
+  4)com.xworkz.question3;
+  
+    com.java.mysql;
+	
+	class.forname("com.mysql.cj.jdbc.Driver");
+	
+	connection con=drivermanager.getconnection(url,username,password){
+	if(con!=null){
+	System.out.println("connection is ok")
+	}else{
+	System.out.println("connection is not ok")
+	}
+	}
+	
+	5)public class jdbcdelete{
+	public static void main (String args[]){
+	
+	try(Connection con=DriverManager.getconnection("jdbc:mysql://localhost:3306/jdbcdelete")){
+	String query="delete table name where uname=value1";
+	
+	
+	
+	
+	
+	
+	}catch(SQLException e){
+	e.printStacktrace();
+	
+	}
+	}
+	
+	}
+	
+	}
+	
+	
+	6)jdbc opearation
+	  //database
+	create database product_database;
+	use product_database;
+	crete table product_details(product_name varchar(30),price int);
+	
+	select* from  product_details;
+	
+	
+	
+	public enum connectionData{
+	 url("jdbc:mysql://localhost:3306/product_database"),
+	 username("root");
+	 password("Xworkzodc@123");
+	 
+	 
+	 private String value;
+	 
+	 private connectionData(String value)
+	 this.value=value;
+	}
+	public string getvalue(){
+	return value;
+	
+	}
+	
+	//runner class
+	
+	public class xyzrunner{
+	public static void main(String args[]){
+	
+	
+	try(Connection connection =drivermanager.getconnection(connectionData.url.getvalue(),
+	connectionData.username.getvalue(),
+	connectionData.password.getvalue)));{
+	String query="";
+	
+	}catch(SQLException e){
+	   e.printStacktrace();
+	
+	}
+	
+	
+	}
+	
+	}
+	
+	
+	
+	
+	
+  
+  
